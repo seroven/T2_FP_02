@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.G2_Numbers_Lbx = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.G2_Number_Txt = new System.Windows.Forms.TextBox();
             this.G2_Add_Btn = new System.Windows.Forms.Button();
@@ -49,13 +49,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ORDENAMIENTO";
             // 
-            // listBox1
+            // G2_Numbers_Lbx
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(257, 137);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(221, 290);
-            this.listBox1.TabIndex = 1;
+            this.G2_Numbers_Lbx.FormattingEnabled = true;
+            this.G2_Numbers_Lbx.Location = new System.Drawing.Point(257, 137);
+            this.G2_Numbers_Lbx.Name = "G2_Numbers_Lbx";
+            this.G2_Numbers_Lbx.Size = new System.Drawing.Size(221, 290);
+            this.G2_Numbers_Lbx.TabIndex = 1;
             // 
             // label2
             // 
@@ -81,6 +81,7 @@
             this.G2_Add_Btn.TabIndex = 4;
             this.G2_Add_Btn.Text = "Agregar";
             this.G2_Add_Btn.UseVisualStyleBackColor = true;
+            this.G2_Add_Btn.Click += new System.EventHandler(this.G2_Add_Btn_Click);
             // 
             // G2_Search_Btn
             // 
@@ -90,6 +91,7 @@
             this.G2_Search_Btn.TabIndex = 5;
             this.G2_Search_Btn.Text = "Buscar";
             this.G2_Search_Btn.UseVisualStyleBackColor = true;
+            this.G2_Search_Btn.Click += new System.EventHandler(this.G2_Search_Btn_Click);
             // 
             // G2_Delete_Btn
             // 
@@ -99,6 +101,7 @@
             this.G2_Delete_Btn.TabIndex = 6;
             this.G2_Delete_Btn.Text = "Eliminar";
             this.G2_Delete_Btn.UseVisualStyleBackColor = true;
+            this.G2_Delete_Btn.Click += new System.EventHandler(this.G2_Delete_Btn_Click);
             // 
             // G2_Asc_Sort_Btn
             // 
@@ -108,6 +111,7 @@
             this.G2_Asc_Sort_Btn.TabIndex = 7;
             this.G2_Asc_Sort_Btn.Text = "Ordenar de forma Ascendente";
             this.G2_Asc_Sort_Btn.UseVisualStyleBackColor = true;
+            this.G2_Asc_Sort_Btn.Click += new System.EventHandler(this.G2_Asc_Sort_Btn_Click);
             // 
             // G2_Desc_Sort_Btn
             // 
@@ -117,6 +121,7 @@
             this.G2_Desc_Sort_Btn.TabIndex = 8;
             this.G2_Desc_Sort_Btn.Text = "Ordenar de forma Descendente";
             this.G2_Desc_Sort_Btn.UseVisualStyleBackColor = true;
+            this.G2_Desc_Sort_Btn.Click += new System.EventHandler(this.G2_Desc_Sort_Btn_Click);
             // 
             // OrderingForm
             // 
@@ -130,7 +135,7 @@
             this.Controls.Add(this.G2_Add_Btn);
             this.Controls.Add(this.G2_Number_Txt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.G2_Numbers_Lbx);
             this.Controls.Add(this.label1);
             this.Name = "OrderingForm";
             this.Text = "Form1";
@@ -142,7 +147,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox G2_Numbers_Lbx;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox G2_Number_Txt;
         private System.Windows.Forms.Button G2_Add_Btn;
